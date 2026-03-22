@@ -1,6 +1,7 @@
 import getVenues from "@/libs/getVenues";
 import Card from "./Card"
 import Link from "next/link"
+import { VenueJson } from "../../interface"
 
 export default async function VenueCatalog({venueJson} : {venueJson:VenueJson}) {
     var venueJsonReady = await venueJson;
